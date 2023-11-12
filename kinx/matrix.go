@@ -1,3 +1,5 @@
+//go:build tinygo && feather_nrf52840
+
 package main
 
 import (
@@ -8,6 +10,7 @@ import (
 )
 
 var (
+	i2c     = machine.I2C0
 	console = &SerialConsole{machine.Serial}
 	adapter = kintqt.NewAdapter(i2c)
 	matrix  = adapter.NewMatrix()

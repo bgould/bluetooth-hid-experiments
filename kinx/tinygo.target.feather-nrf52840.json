@@ -1,4 +1,0 @@
-{
-	"inherits": ["feather-nrf52840"],
-	"build-tags": ["i2c0"]
-}

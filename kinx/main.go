@@ -1,3 +1,5 @@
+//go:build tinygo && feather_nrf52840
+
 package main
 
 import (
@@ -8,6 +10,10 @@ import (
 	"github.com/bgould/keyboard-firmware/hosts/multihost"
 	"github.com/bgould/keyboard-firmware/hosts/serial"
 	"github.com/bgould/keyboard-firmware/keyboard"
+)
+
+const (
+	_debug = true
 )
 
 var (
